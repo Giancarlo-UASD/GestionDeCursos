@@ -9,13 +9,13 @@ Integrantes:
 
 # Descripción
 
-Este proyecta crea un sistema para gestionar cursos en alguna institución académica. Tiene validaciones para evitar que la misma persona se inscriba al mismo curso, entre otras.
+Este proyecto crea un sistema para gestionar cursos en alguna institución académica. Tiene validaciones para evitar que la misma persona se inscriba al mismo curso, entre otras.
 
 # Clases
--Estudiante
--Curso
--Inscripcion
--GestionAcademica
+- Estudiante
+- Curso
+- Inscripcion
+- GestionAcademica
 
 # Contenedor Utilizado
 
