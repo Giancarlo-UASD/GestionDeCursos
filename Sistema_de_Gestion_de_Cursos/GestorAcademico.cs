@@ -4,14 +4,20 @@ public class GestorAcademico
     private List<Curso> cursos = new List<Curso>();
     private List<Inscripcion> inscripciones = new List<Inscripcion>();
 
-    public void RegistrarEstudiante(Estudiante nuevoEstudiante)
+    public void RegistrarEstudiante(string nomEst)
     {
+        Estudiante nuevoEstudiante = new Estudiante(nomEst);
         estudiantes.Add(nuevoEstudiante);
         Console.WriteLine($"\n[Éxito] Estudiante '{nuevoEstudiante.Nombre}' registrado con ID: {nuevoEstudiante.IdEstudiante}");
     }
 
-    public void RegistrarCurso(Curso curso)
+    public void RegistrarCurso(string codCur, string nomCur)
     {
+        Curso curso = new Curso(codCur, nomCur);
+        if (cursos.Any(c => c.CodigoCurso == curso.CodigoCurso)){
+            Console.WriteLine("\n[Error] Este código ya está en uso...");
+            return;
+        }
         cursos.Add(curso);
         Console.WriteLine($"\n[Éxito] Curso '{curso.NombreCurso}' registrado correctamente.");
     }

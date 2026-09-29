@@ -30,7 +30,7 @@ while (!salir)
         case "1":
             Console.Write("\nIngrese Nombre del estudiante: ");
             string nomEst = Console.ReadLine();
-            gestor.RegistrarEstudiante(new Estudiante(nomEst)); 
+            gestor.RegistrarEstudiante(nomEst); 
             break;
 
         case "2":
@@ -38,7 +38,7 @@ while (!salir)
             string codCur = Console.ReadLine();
             Console.Write("Ingrese Nombre del curso: ");
             string nomCur = Console.ReadLine();
-            gestor.RegistrarCurso(new Curso(codCur, nomCur));
+            gestor.RegistrarCurso(codCur, nomCur);
             break;
 
         case "3":
