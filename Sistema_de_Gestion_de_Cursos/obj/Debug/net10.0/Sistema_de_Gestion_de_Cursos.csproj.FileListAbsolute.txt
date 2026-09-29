@@ -1,0 +1,15 @@
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.AssemblyInfoInputs.cache
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.AssemblyInfo.cs
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.csproj.CoreCompileInputs.cache
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.sourcelink.json
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\bin\Debug\net10.0\Sistema_de_Gestion_de_Cursos.exe
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\bin\Debug\net10.0\Sistema_de_Gestion_de_Cursos.deps.json
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\bin\Debug\net10.0\Sistema_de_Gestion_de_Cursos.runtimeconfig.json
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\bin\Debug\net10.0\Sistema_de_Gestion_de_Cursos.dll
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\bin\Debug\net10.0\Sistema_de_Gestion_de_Cursos.pdb
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.dll
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\refint\Sistema_de_Gestion_de_Cursos.dll
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.pdb
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\Sistema_de_Gestion_de_Cursos.genruntimeconfig.cache
+C:\Users\zlaae\Desktop\Shared\.UASD\2026-2\Lenguajes de programacion\Unidad 3\Ejercicio 3.2\GestionDeCursos\Sistema_de_Gestion_de_Cursos\obj\Debug\net10.0\ref\Sistema_de_Gestion_de_Cursos.dll
