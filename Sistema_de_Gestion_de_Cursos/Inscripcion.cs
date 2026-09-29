@@ -29,4 +29,8 @@ public class Inscripcion
         Curso = cur;
         FechaInscripcion = fecha;
     }
+
+    public void MostrarInformacion(){
+        Console.WriteLine($"- Estudiante: {Estudiante.Nombre} ---> Curso: {Curso.NombreCurso} (Fecha: {FechaInscripcion.ToShortDateString()})");
+    }
 }

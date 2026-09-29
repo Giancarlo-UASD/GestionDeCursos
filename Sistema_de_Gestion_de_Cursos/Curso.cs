@@ -21,4 +21,8 @@ public class Curso
         CodigoCurso = codigo;
         NombreCurso = nombre;
     }
+
+    public void MostrarInformacion(){
+        Console.WriteLine($"- Código: {CodigoCurso} | Materia: {NombreCurso}");
+    }
 }

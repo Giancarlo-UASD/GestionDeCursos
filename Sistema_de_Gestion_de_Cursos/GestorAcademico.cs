@@ -4,9 +4,8 @@ public class GestorAcademico
     private List<Curso> cursos = new List<Curso>();
     private List<Inscripcion> inscripciones = new List<Inscripcion>();
 
-    public void RegistrarEstudiante(string nombre)
+    public void RegistrarEstudiante(Estudiante nuevoEstudiante)
     {
-        Estudiante nuevoEstudiante = new Estudiante(nombre);
         estudiantes.Add(nuevoEstudiante);
         Console.WriteLine($"\n[Éxito] Estudiante '{nuevoEstudiante.Nombre}' registrado con ID: {nuevoEstudiante.IdEstudiante}");
     }
@@ -77,7 +76,7 @@ public class GestorAcademico
 
         foreach (var est in listaEstudiantes)
         {
-            Console.WriteLine($"- ID: {est.IdEstudiante} | Nombre: {est.Nombre}");
+            est.MostrarInformacion();
         }
     }
 
@@ -104,7 +103,7 @@ public class GestorAcademico
 
         foreach (var cur in listaCursos)
         {
-            Console.WriteLine($"- Código: {cur.CodigoCurso} | Materia: {cur.NombreCurso}");
+            cur.MostrarInformacion();
         }
     }
 
@@ -164,8 +163,7 @@ public class GestorAcademico
 
         foreach (var est in listaEstudiantes)
         {
-            if (!estudiantes.Any(e => e.IdEstudiante == est.IdEstudiante))
-                estudiantes.Add(est);
+            estudiantes.Add(est);
         }
 
         // 3. Generar inscripciones aleatorias evitando duplicados
@@ -176,8 +174,8 @@ public class GestorAcademico
         while (inscripciones.Count < metaInscripciones && intentos < 1000)
         {
             intentos++;
-            var estudianteAleatorio = listaEstudiantes[rand.Next(listaEstudiantes.Count)];
-            var cursoAleatorio = listaCursos[rand.Next(listaCursos.Count)];
+            Estudiante estudianteAleatorio = listaEstudiantes[rand.Next(listaEstudiantes.Count)];
+            Curso cursoAleatorio = listaCursos[rand.Next(listaCursos.Count)];
 
             bool yaInscrito = inscripciones.Any(i => i.Estudiante.IdEstudiante == estudianteAleatorio.IdEstudiante && i.Curso.CodigoCurso == cursoAleatorio.CodigoCurso);
             if (!yaInscrito)
@@ -193,16 +191,16 @@ public class GestorAcademico
         Console.WriteLine($"\n=== ESTUDIANTES REGISTRADOS ({estudiantes.Count}) ===");
         if (estudiantes.Count == 0) Console.WriteLine("(No hay estudiantes)");
         foreach (var e in estudiantes) 
-            Console.WriteLine($"- ID: {e.IdEstudiante} | Nombre: {e.Nombre}");
+            e.MostrarInformacion();
 
         Console.WriteLine($"\n=== CURSOS DISPONIBLES ({cursos.Count}) ===");
         if (cursos.Count == 0) Console.WriteLine("(No hay cursos)");
         foreach (var c in cursos) 
-            Console.WriteLine($"- Código: {c.CodigoCurso} | Materia: {c.NombreCurso}");
+            c.MostrarInformacion();
 
         Console.WriteLine($"\n=== INSCRIPCIONES ACTIVAS ({inscripciones.Count}) ===");
         if (inscripciones.Count == 0) Console.WriteLine("(No hay inscripciones)");
         foreach (var i in inscripciones) 
-            Console.WriteLine($"- Estudiante: {i.Estudiante.Nombre} ---> Curso: {i.Curso.NombreCurso} (Fecha: {i.FechaInscripcion.ToShortDateString()})");
+            i.MostrarInformacion();
     }
 }
