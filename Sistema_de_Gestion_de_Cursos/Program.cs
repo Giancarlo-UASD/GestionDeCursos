@@ -29,16 +29,31 @@ while (!salir)
     {
         case "1":
             Console.Write("\nIngrese Nombre del estudiante: ");
-            string nomEst = Console.ReadLine();
-            gestor.RegistrarEstudiante(nomEst); 
+            string nombreEstudiante = Console.ReadLine();
+            while((nombreEstudiante.Length < 2) || (String.IsNullOrEmpty(nombreEstudiante))){
+                Console.WriteLine("[Error] Nombre no Válido...");
+                Console.Write("\nIngrese Nombre del estudiante: ");
+                nombreEstudiante = Console.ReadLine();
+            }
+            gestor.RegistrarEstudiante(nombreEstudiante); 
             break;
 
         case "2":
             Console.Write("\nIngrese Código del curso: ");
-            string codCur = Console.ReadLine();
+            string codigoCurso = Console.ReadLine();
+            while((codigoCurso.Length < 2) || (String.IsNullOrEmpty(codigoCurso))){
+                Console.WriteLine("[Error] Código no Válido...");
+                Console.Write("\nIngrese Código del curso: ");
+                codigoCurso = Console.ReadLine();
+            }
             Console.Write("Ingrese Nombre del curso: ");
-            string nomCur = Console.ReadLine();
-            gestor.RegistrarCurso(codCur, nomCur);
+            string nombreCurso = Console.ReadLine();
+            while((nombreCurso.Length < 2) || (String.IsNullOrEmpty(nombreCurso))){
+                Console.WriteLine("[Error] Nombre no Válido...");
+                Console.Write("Ingrese Nombre del curso: ");
+                nombreCurso = Console.ReadLine();
+            }
+            gestor.RegistrarCurso(codigoCurso, nombreCurso);
             break;
 
         case "3":

@@ -10,13 +10,27 @@ public class Estudiante
     public string IdEstudiante 
     { 
         get { return idEstudiante; } 
-        private set { idEstudiante = value; } 
+        private set { 
+            if((value.Length < 2) || (String.IsNullOrEmpty(value))){
+                Console.WriteLine("[Error] Nombre no Válido...");
+                idEstudiante = "(ID no válido)";
+            }else{
+                idEstudiante = value; 
+            }
+        }
     }
 
     public string Nombre 
     { 
         get { return nombre; } 
-        private set { nombre = value; } 
+        private set { 
+            if((value.Length < 2) || (String.IsNullOrEmpty(value))){
+                Console.WriteLine("[Error] Nombre no Válido...");
+                nombre = "(Nombre no válido)";
+            }else{
+                nombre = value; 
+            }
+        }
     }
 
     // Constructor que genera automáticamente el ID (Ej: E00001, E00002...)

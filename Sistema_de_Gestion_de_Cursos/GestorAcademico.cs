@@ -4,9 +4,9 @@ public class GestorAcademico
     private List<Curso> cursos = new List<Curso>();
     private List<Inscripcion> inscripciones = new List<Inscripcion>();
 
-    public void RegistrarEstudiante(string nomEst)
+    public void RegistrarEstudiante(string nombreEstudiante)
     {
-        Estudiante nuevoEstudiante = new Estudiante(nomEst);
+        Estudiante nuevoEstudiante = new Estudiante(nombreEstudiante);
         estudiantes.Add(nuevoEstudiante);
         Console.WriteLine($"\n[Éxito] Estudiante '{nuevoEstudiante.Nombre}' registrado con ID: {nuevoEstudiante.IdEstudiante}");
     }

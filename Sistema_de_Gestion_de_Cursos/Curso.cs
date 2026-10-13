@@ -7,13 +7,27 @@ public class Curso
     public string CodigoCurso 
     { 
         get { return codigoCurso; } 
-        private set { codigoCurso = value; } 
+        private set { 
+            if((value.Length < 2) || (String.IsNullOrEmpty(value))){
+                Console.WriteLine("[Error] Nombre no Válido...");
+                codigoCurso = "(Código de Curso no válido)";
+            }else{
+                codigoCurso = value; 
+            }
+        }
     }
 
     public string NombreCurso 
     { 
         get { return nombreCurso; } 
-        private set { nombreCurso = value; } 
+        private set { 
+            if((value.Length < 2) || (String.IsNullOrEmpty(value))){
+                Console.WriteLine("[Error] Nombre no Válido...");
+                nombreCurso = "(Nombre de Curso no válido)";
+            }else{
+                nombreCurso = value; 
+            }
+        }
     }
 
     public Curso(string codigo, string nombre)
